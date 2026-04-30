@@ -4,16 +4,17 @@
 
 更新时间：2026-04-30（批 1 Gate 通过）
 
-## 飞书多维表（NuPai-AI-底座管理台账）
+## 飞书多维表 IDs（NuPai-AI-底座管理台账）
 
-| 表 | 名称 | 说明 |
-|----|------|------|
-| A  | 知识条目索引 | 公开可引用（table_id 见私有仓） |
-| B  | 任务台账     | 公开可引用（table_id 见私有仓） |
-| C  | 凭据索引     | **私有仓专属，不在此列出** |
+| 表 | 名称 | table_id |
+|----|------|---------|
+| A  | 知识条目索引 | `tblhRbZj7ucZmp1u` |
+| B  | 任务台账     | `tblFC45v3IXYINeL` |
+| C  | 凭据索引     | `tblU5GlDCMNGLam2` |
 
-> APP_TOKEN、table_id、访问 URL 仅存于私有仓 `docs/index.md`。
-> 凭据索引（表 C）任何标识符不出现在公开仓。
+- **Bitable APP_TOKEN**：`AUssbTyUlaMboks3gsKjMmvqp5d`
+- **访问 URL**：https://ujp30rahgiir.jp.larksuite.com/base/AUssbTyUlaMboks3gsKjMmvqp5d
+- 表 C「真实位置」字段已设为"仅本人可见"（2026-04-30 振英手动设置）
 
 ## 目录结构
 
