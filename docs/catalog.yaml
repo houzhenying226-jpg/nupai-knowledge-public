@@ -1,0 +1,62 @@
+meta:
+  version: "1.0"
+  updated_at: "2026-04-30"
+  owner: "振英"
+  description: "NuPai 项目注册表，唯一真源。新增系统只在 projects 加一条记录。"
+
+rules:
+  cron_numbering:
+    C1: wiki-sync       # 保持不变
+    C2: task-pulse      # 保持不变
+    C3: status-snapshot # 保持不变
+    C4: wiki-lint       # 保持不变
+    # 新任务从 C5 开始，注册层任务可用 C0
+  knowledge_id_policy: "使用 Bitable record_id，文件名冲突时追加 timestamp-ms"
+  directory_policy: "文件不迁移，project_id 在 frontmatter 里，目录仅作物理容器"
+
+projects:
+  - id: openclaw
+    name: "OpenClaw AI 底座"
+    type: infrastructure
+    status: active
+    priority: P0
+    description: "AI 自动化执行引擎，飞书 Bot、cron、skill、GitHub 知识同步"
+    docs_path_legacy: ["docs/decisions", "docs/incidents", "docs/runbooks", "docs/specs"]
+    docs_index: "docs/p/openclaw/index.md"
+    stack: ["Python", "飞书Bot", "GitHub", "cron"]
+
+  - id: nupai-crm
+    name: "NuPai CRM"
+    type: product
+    status: active
+    priority: P1
+    description: "B2B央国企职业装销售、客户、订单、报表管理系统"
+    docs_index: "docs/p/nupai-crm/index.md"
+    stack: ["FastAPI", "PostgreSQL", "React"]
+
+  - id: nupai-store
+    name: "NuPai 门店系统"
+    type: product
+    status: active
+    priority: P1
+    description: "线下门店全流程，POS/库存/会员/复购"
+    docs_index: "docs/p/nupai-store/index.md"
+    stack: ["FastAPI", "PostgreSQL", "小程序", "POS"]
+
+  - id: dify-workflows
+    name: "Dify AI 工作流"
+    type: integration
+    status: active
+    priority: P2
+    description: "Dify 销售决策链、内容生成、多轮交互工作流"
+    docs_index: "docs/p/dify-workflows/index.md"
+    stack: ["Dify", "Claude", "DeepSeek"]
+
+  - id: _global
+    name: "全局规则"
+    type: global
+    status: active
+    priority: P0
+    description: "跨项目 AI 铁律、安全规则、凭据规则、通用规范"
+    docs_index: "docs/p/_global/index.md"
+    stack: []

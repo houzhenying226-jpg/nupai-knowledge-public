@@ -2,6 +2,33 @@
 
 ---
 
+## [2026-04-30] v1.2 | claude.ai → OpenClaw 零搬运闭环已实现
+
+### 路线图条目
+
+knowledge-writer skill 升级至 v1.2，实现跨端零搬运知识入库闭环：
+
+```
+振英在 claude.ai 讨论
+  → claude.ai 生成 [KNOWLEDGE_CARD] 块
+  → 振英复制贴到飞书
+  → OpenClaw 调用 knowledge_writer.py 解析并写入 Bitable 表 A
+  → 飞书消息回报振英（标题 | 类型 | 项目 | 风险 | 表链接）
+  → C1 30分钟内同步到 docs/
+```
+
+**变更文件**：
+- `~/.openclaw/scripts/knowledge_writer.py`（新建执行脚本）
+- `~/.openclaw/workspace/skills/nupai-knowledge-writer/SKILL.md`（v1.2 更新）
+- `infra/knowledge_writer.py`（灾后恢复镜像）
+- `infra/skills/knowledge-writer.md`（SKILL.md 镜像）
+
+**解析规则**：frontmatter（type/title/date/risk_level/project）+ 五段正文（背景/内容/结论/影响/下次注意）  
+**降级机制**：解析失败（exit 1）→ fallback 到原 5 轮问答流程  
+**摘要生成**：自动取「结论」字段前 200 字，无需人工填写
+
+---
+
 ## [2026-04-30] batch-1 | 基础设施搭建教训
 
 ### 坑 1：Bitable 必须独立建，不能在 Wiki 知识库下

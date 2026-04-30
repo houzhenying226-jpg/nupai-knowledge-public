@@ -1,3 +1,6 @@
+---
+project_id: nupai-store
+---
 # NuPai 门店项目状态
 
 系统初始化中（C3 status-snapshot cron 启用后接管）
