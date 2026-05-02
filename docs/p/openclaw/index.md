@@ -1,11 +1,44 @@
 # openclaw 知识索引
 
-> 自动生成 by C1 | 2026-04-30T09:46:43Z
+> 自动生成 by C1 | 2026-05-02T07:30:02Z
 
-共 5 条记录：
+共 38 条记录：
 
+- [20260427-openclaw-7-layer-arch](../../docs/decisions/20260427-openclaw-7-layer-arch.md)
+- [20260427-openclaw-claude-code-retirement](../../docs/decisions/20260427-openclaw-claude-code-retirement.md)
+- [20260427-openclaw-feishu-dual-channel](../../docs/decisions/20260427-openclaw-feishu-dual-channel.md)
+- [20260427-openclaw-k3-aliyun-cancelled](../../docs/decisions/20260427-openclaw-k3-aliyun-cancelled.md)
+- [20260427-openclaw-k8-multi-llm-router](../../docs/decisions/20260427-openclaw-k8-multi-llm-router.md)
+- [20260427-openclaw-three-iron-laws](../../docs/decisions/20260427-openclaw-three-iron-laws.md)
+- [20260429-openclaw-company-ai-os](../../docs/decisions/20260429-openclaw-company-ai-os.md)
+- [20260429-openclaw-gpt55-full-stack](../../docs/decisions/20260429-openclaw-gpt55-full-stack.md)
+- [20260429-openclaw-workspace-49-files](../../docs/decisions/20260429-openclaw-workspace-49-files.md)
+- [20260429-openclaw-ws2-template-rules](../../docs/decisions/20260429-openclaw-ws2-template-rules.md)
 - [brain-route-hijack-root-cause](../../docs/decisions/brain-route-hijack-root-cause.md)
+- [knowledge-card](../../docs/decisions/knowledge-card.md)
 - [memoryops-v1-1-bitable](../../docs/decisions/memoryops-v1-1-bitable.md)
+- [protect-files-hook](../../docs/decisions/protect-files-hook.md)
+- [wikibitable](../../docs/decisions/wikibitable.md)
+- [20260319-openclaw-cron-delivery-announce](../../docs/incidents/20260319-openclaw-cron-delivery-announce.md)
+- [20260319-openclaw-feishu-card-400](../../docs/incidents/20260319-openclaw-feishu-card-400.md)
+- [20260427-openclaw-sentry-secret-rotate](../../docs/incidents/20260427-openclaw-sentry-secret-rotate.md)
+- [20260427-openclaw-zsh-heredoc-truncation](../../docs/incidents/20260427-openclaw-zsh-heredoc-truncation.md)
+- [20260429-openclaw-before-dispatch-discovery](../../docs/incidents/20260429-openclaw-before-dispatch-discovery.md)
+- [20260429-openclaw-claude-ai-wrong-judgments](../../docs/incidents/20260429-openclaw-claude-ai-wrong-judgments.md)
+- [astatus](../../docs/incidents/astatus.md)
+- [bitable91403](../../docs/incidents/bitable91403.md)
+- [claudecodemcp](../../docs/incidents/claudecodemcp.md)
 - [memoryops-v1-1](../../docs/incidents/memoryops-v1-1.md)
+- [openapiscopetenantuser](../../docs/incidents/openapiscopetenantuser.md)
 - [protect-files-hook-macos-realpath-fix](../../docs/incidents/protect-files-hook-macos-realpath-fix.md)
+- [webhook](../../docs/incidents/webhook.md)
+- [wiki](../../docs/incidents/wiki.md)
+- [20260319-openclaw-jobs-json-delivery-fix](../../docs/runbooks/20260319-openclaw-jobs-json-delivery-fix.md)
+- [20260427-openclaw-23-item-deploy-checklist](../../docs/runbooks/20260427-openclaw-23-item-deploy-checklist.md)
+- [20260429-openclaw-codex-device-auth-sop](../../docs/runbooks/20260429-openclaw-codex-device-auth-sop.md)
+- [20260429-openclaw-workspace-update-sop](../../docs/runbooks/20260429-openclaw-workspace-update-sop.md)
+- [20260319-openclaw-cron-announce-vs-agent](../../docs/knowledge/20260319-openclaw-cron-announce-vs-agent.md)
+- [20260427-openclaw-d0-d3-risk-levels](../../docs/knowledge/20260427-openclaw-d0-d3-risk-levels.md)
+- [20260427-openclaw-role-transformation](../../docs/knowledge/20260427-openclaw-role-transformation.md)
+- [20260429-openclaw-before-dispatch-hook-guide](../../docs/knowledge/20260429-openclaw-before-dispatch-hook-guide.md)
 - [test-entry](../../docs/knowledge/test-entry.md)

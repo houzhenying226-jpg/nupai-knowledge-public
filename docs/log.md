@@ -380,3 +380,34 @@ Wiki（可选）
 | docs/index.md | 需更新"正文真源"描述 |
 | v1.1 方案文档 | 本条 log 即为修正记录，原文档不改（历史存档） |
 
+---
+
+## [2026-05-02] NuPai 版本治理 v2.1 全链路完结
+
+### 事件
+
+NuPai 版本治理 v2.1 子系统落地完成，飞书群收到 v3.8.0 发布卡片，全链路验收通过。
+
+### 交付内容
+
+- `docs/VERSION` + `docs/CHANGELOG.md` + `docs/current_state.md`：版本单一真源
+- `docs/knowledge/status/`：知识状态机（4 文件，CURRENT 状态）
+- `scripts/release-note-gen.py`：SemVer 自动 bump + 飞书发布卡片
+- `scripts/validate-knowledge-status.py`：frontmatter 校验 + 180天超期检测
+- `deploy.yml` post-deploy job：mutex → pull main → bump → docs-update PR
+- `release-notify.yml`：docs PR 合入 → 飞书版本发布通知
+- `validate-knowledge-status` 加入 main required checks（第 12 项）
+
+### Linear
+
+NUP-349 / NUP-350 / NUP-351 / NUP-352 / NUP-353 全部 Done
+
+### 系统状态
+
+| 子系统 | 版本 | 状态 |
+|--------|------|------|
+| MemoryOps | v1.1 | ✅ 已落地 |
+| 版本治理 | v2.1 | ✅ 已落地 |
+
+NuPai 系统架构补丁 2026-04-30 定义的两套子系统全部完成。
+
