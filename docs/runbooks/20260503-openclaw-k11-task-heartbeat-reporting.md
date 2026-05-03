@@ -1,23 +1,13 @@
----
-type: runbooks
-title: OpenClaw K11 — 任务级心跳与主动汇报
-card_type: ops_runbook
-source: openclaw_session_2026-05-03
-confidence: 0.95
-date: 2026-05-03
-created_at: 2026-05-03
-risk_level: L4
-project: openclaw
-is_contradicted: false
-tags:
-  - openclaw
-  - dispatcher
-  - heartbeat
-  - github-webhook
-  - feishu
-  - K11
-  - runbook
----
+# OpenClaw K11 — 任务级心跳与主动汇报
+
+> 类型：操作规程 | 项目：openclaw | 风险：L4 | 状态：有效
+> 同步自 Feishu Bitable 表 A | 2026-05-03T17:00:00Z
+
+## 摘要
+
+K11 任务级心跳与主动汇报：任务级 SLA、GitHub webhook 失败秒推、整点看板与未结尾巴。
+
+## 正文
 
 # OpenClaw K11 — 任务级心跳与主动汇报
 

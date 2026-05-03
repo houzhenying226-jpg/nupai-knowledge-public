@@ -1,8 +1,8 @@
 # openclaw 知识索引
 
-> 自动生成 by C1 | 2026-05-02T07:30:02Z
+> 自动生成 by C1 | 2026-05-03T17:00:02Z
 
-共 38 条记录：
+共 39 条记录：
 
 - [20260427-openclaw-7-layer-arch](../../docs/decisions/20260427-openclaw-7-layer-arch.md)
 - [20260427-openclaw-claude-code-retirement](../../docs/decisions/20260427-openclaw-claude-code-retirement.md)
@@ -37,6 +37,7 @@
 - [20260427-openclaw-23-item-deploy-checklist](../../docs/runbooks/20260427-openclaw-23-item-deploy-checklist.md)
 - [20260429-openclaw-codex-device-auth-sop](../../docs/runbooks/20260429-openclaw-codex-device-auth-sop.md)
 - [20260429-openclaw-workspace-update-sop](../../docs/runbooks/20260429-openclaw-workspace-update-sop.md)
+- [20260503-openclaw-k11-task-heartbeat-reporting](../../docs/runbooks/20260503-openclaw-k11-task-heartbeat-reporting.md)
 - [20260319-openclaw-cron-announce-vs-agent](../../docs/knowledge/20260319-openclaw-cron-announce-vs-agent.md)
 - [20260427-openclaw-d0-d3-risk-levels](../../docs/knowledge/20260427-openclaw-d0-d3-risk-levels.md)
 - [20260427-openclaw-role-transformation](../../docs/knowledge/20260427-openclaw-role-transformation.md)
