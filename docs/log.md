@@ -411,3 +411,54 @@ NUP-349 / NUP-350 / NUP-351 / NUP-352 / NUP-353 全部 Done
 
 NuPai 系统架构补丁 2026-04-30 定义的两套子系统全部完成。
 
+
+
+## [2026-05-02] lint | 周度健康检查
+
+│
+◇  Config warnings ───────────────────────────────────────────────────────╮
+│                                                                         │
+│  - plugins.entries.active-memory: plugin disabled (disabled in config)  │
+│    but config is present                                                │
+│                                                                         │
+├─────────────────────────────────────────────────────────────────────────╯
+model.run via gateway
+provider: openrouter
+model: openai/gpt-5.5
+outputs: 1
+⚠️ 发现明文凭据 23 处
+
+## 矛盾内容
+- `index.md` 仍公开写入 Bitable APP 标识、表 C 凭据索引标识和访问链接；`log.md`“坑 4”明确说公开仓不能放 APP_TOKEN + 表 C table_id，二者冲突。
+- `index.md` 说 C1 由飞书 Wiki 每 30 分钟同步；`log.md` arch-decision 已改为 Bitable 表 A 是正文真源，Wiki 仅阅读层，不再参与 C1 同步。
+- `STATUS.md` 显示 `feishu-wiki-sync` 异常、`wiki-lint` 待启用；`log.md` 又说 MemoryOps v1.1 已落地、两套子系统全部完成，完成状态与运行状态冲突。
+- `tasks/ledger.md` 仍写 4 个 v1.1 cron “批 4 启用”；`STATUS.md` 显示 `task-pulse`、`status-snapshot` 已正常运行，启用状态冲突。
+- `projects/nupai-crm/STATUS.md`、`projects/nupai-store/STATUS.md` 仍是“系统初始化中”，但顶层 `STATUS.md` 已有生产服务状态和开放 PR，项目状态未同步。
+
+## 孤立文件
+- `blueprints/nupai-versioning-v2.1.md` 未在 `index.md` 目录结构中列出，除 `log.md` 事件提及外缺少正式入口。
+- `runbooks/pat-rotation.md` 有 frontmatter 且为 CURRENT，但未被 `index.md` 或版本治理文档显式引用。
+- `projects/nupai-crm/STATUS.md` 和 `projects/nupai-store/STATUS.md` 只在目录中被列出，内容仍未被顶层 `STATUS.md` 聚合引用。
+- 多个细分 runbook（如 Store/CRM 容器、端口、Key 清单）未在 `runbooks/nupaiv10.md` 中建立反向索引，查找依赖文件名猜测。
+- `runbooks/20260319-openclaw-jobs-json-delivery-fix.md` 未被 OpenClaw 架构决策或任务台账引用，可能变成一次性事故 SOP。
+
+## 过期内容
+- `index.md` 更新时间仍为 2026-04-30，且还停留在“批 1 Gate 通过”，已落后于 2026-05-02 的版本治理完成记录。
+- `tasks/ledger.md` 更新时间仍为 2026-04-29，未反映当前 `task-pulse`、`status-snapshot` 已运行、`feishu-wiki-sync` 异常。
+- `projects/*/STATUS.md` 仍为 2026-04-29 初始化骨架，明显落后。
+- `log.md` batch-2-plan 仍大量保留“dry-run only / 待验证 / 等 review”措辞，但后续又说 MemoryOps v1.1 已落地，计划状态未归档。
+- `runbooks/20260427-openclaw-claude-code-retirement.md` 写 Claude Code 仅部署期临时工具；多个 runbook 仍以 Claude Code 为主要操作入口，需标注历史/例外范围。
+
+## 缺失实体
+- 缺少 `docs/current_state.md`、`docs/VERSION`、`docs/CHANGELOG.md` 的知识库条目，`log.md` 声称它们是版本单一真源。
+- 缺少 `docs/knowledge/status/` 目录说明或状态机索引，尽管版本治理 v2.1 已声明落地。
+- 缺少 C1/C2/C3/C4 当前运行状态文档，无法解释为什么 C1 异常、C2/C3 正常、C4 待启用。
+- 缺少公开仓脱敏白名单/黑名单文档，导致 `index.md` 与 `log.md` 安全规则反复冲突。
+- 缺少“Bitable 表 A 正文真源”正式架构文档，当前只埋在 `log.md` 中，`index.md` 尚未更新。
+
+## 新增建议
+- 新增《MemoryOps 当前状态与 Cron 启用矩阵》，统一 C1-C4 的 planned/dry-run/enabled/error 状态。
+- 新增《知识库公开发布脱敏规则》，明确 APP 标识、table 标识、访问链接、IP、端口、Key 名称哪些可公开、哪些必须替换为 `[REDACTED]`。
+- 新增《Bitable 表 A 正文真源架构说明》，替换旧 Wiki 真源叙述，并更新 `index.md`。
+- 新增《NuPai 版本治理 v2.1 操作入口》，汇总 VERSION、CHANGELOG、current_state、状态机、PAT 轮换 runbook。
+- 新增《Runbook 索引》，按 CRM/Store/OpenClaw/Dify/安全/备份分类引用所有细分 SOP。
