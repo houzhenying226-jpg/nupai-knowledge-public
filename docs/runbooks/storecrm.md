@@ -1,7 +1,7 @@
 # Store/CRM定时任务清单
 
 > 类型：操作规程 | 项目：_global | 风险：L3 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-03T14:35:57Z
+> 同步自 Feishu Bitable 表 A | 2026-05-03T15:05:58Z
 
 ## 摘要
 
