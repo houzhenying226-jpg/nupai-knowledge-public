@@ -1,5 +1,5 @@
 # openclaw 项目状态
-更新时间：2026-05-04T14:00:00Z
+更新时间：2026-05-05T14:00:01Z
 
 ## Cron 任务台账
 | 任务名 | 状态 | 最近日志 |
@@ -10,8 +10,8 @@
 | weekly-memory | 未知 |  |
 | weekly-report | 未知 |  |
 | feishu-wiki-sync | 正常 | 2026-05-04T11:35:55Z 同步 9 文件 |
-| task-pulse | 正常 | 2026-05-04T13:55:00Z ok=9 issues=0 |
-| status-snapshot | 正常 | 2026-05-03T14:02:10Z STATUS.md 已更新 |
+| task-pulse | 异常 | 2026-05-05T13:55:00Z ok=12 issues=1 | |  |
+| status-snapshot | 正常 | 2026-05-04T14:00:00Z STATUS.md 已更新 |
 | wiki-lint | 异常 | 2026-05-02T19:00:00Z gateway 失败: [Errno  |
 | openclaw-gateway | 未知 |  |
 | webhook-server | 未知 |  |
