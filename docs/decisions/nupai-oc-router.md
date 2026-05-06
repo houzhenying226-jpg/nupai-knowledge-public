@@ -1,7 +1,7 @@
 # nupai-oc-router架构与三工具分工
 
 > 类型：架构决策 | 项目：openclaw | 风险：L3 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-05T14:00:01Z
+> 同步自 Feishu Bitable 表 A | 2026-05-05T14:00:00Z
 
 ## 摘要
 

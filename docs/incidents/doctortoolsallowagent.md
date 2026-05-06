@@ -1,7 +1,7 @@
 # doctor砍tools.allow导致agent全挂
 
 > 类型：故障复盘 | 项目：openclaw | 风险：L4 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-05T14:00:01Z
+> 同步自 Feishu Bitable 表 A | 2026-05-05T14:00:00Z
 
 ## 摘要
 
