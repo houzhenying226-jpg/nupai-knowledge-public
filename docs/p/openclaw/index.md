@@ -1,8 +1,8 @@
 # openclaw 知识索引
 
-> 自动生成 by C1 | 2026-05-06T02:34:52Z
+> 自动生成 by C1 | 2026-05-06T04:00:05Z
 
-共 67 条记录：
+共 68 条记录：
 
 - [20260427-openclaw-7-layer-arch](../../docs/decisions/20260427-openclaw-7-layer-arch.md)
 - [20260427-openclaw-claude-code-retirement](../../docs/decisions/20260427-openclaw-claude-code-retirement.md)
@@ -60,6 +60,7 @@
 - [20260503-openclaw-k11-task-heartbeat-reporting](../../docs/runbooks/20260503-openclaw-k11-task-heartbeat-reporting.md)
 - [nupai-oc-router-post-deploy-9-step-verification-20260505](../../docs/runbooks/nupai-oc-router-post-deploy-9-step-verification-20260505.md)
 - [nupai-oc-router9](../../docs/runbooks/nupai-oc-router9.md)
+- [openclaw-2026-05-06](../../docs/runbooks/openclaw-2026-05-06.md)
 - [openclaw-gpt-primary-openrouter-fallback-token-expiry-watch](../../docs/runbooks/openclaw-gpt-primary-openrouter-fallback-token-expiry-watch.md)
 - [openclaw-heartbeat-noise-reduction-multi-source-sync-20260505](../../docs/runbooks/openclaw-heartbeat-noise-reduction-multi-source-sync-20260505.md)
 - [openclaw-nadirclaw](../../docs/runbooks/openclaw-nadirclaw.md)
