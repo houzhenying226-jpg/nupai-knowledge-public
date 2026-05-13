@@ -1,7 +1,7 @@
 # OpenClaw 文件写入绕过方法
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-13T15:13:36Z
+> 同步自 Feishu Bitable 表 A | 2026-05-13T15:43:45Z
 
 ## 摘要
 
