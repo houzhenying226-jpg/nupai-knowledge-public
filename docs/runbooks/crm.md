@@ -1,7 +1,7 @@
 # CRM端口映射全表
 
 > 类型：操作规程 | 项目：nupai-crm | 风险：L3 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-13T07:41:10Z
+> 同步自 Feishu Bitable 表 A | 2026-05-13T08:11:20Z
 
 ## 摘要
 
