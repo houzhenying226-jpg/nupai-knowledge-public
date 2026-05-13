@@ -1,8 +1,8 @@
 # nupai-crm 知识索引
 
-> 自动生成 by C1 | 2026-05-11T10:30:08Z
+> 自动生成 by C1 | 2026-05-13T04:10:14Z
 
-共 15 条记录：
+共 41 条记录：
 
 - [20260317-nupai-crm-api-no-e2e-test](../../docs/incidents/20260317-nupai-crm-api-no-e2e-test.md)
 - [20260317-nupai-crm-enum-no-translation](../../docs/incidents/20260317-nupai-crm-enum-no-translation.md)
@@ -18,4 +18,30 @@
 - [feedback-deploy-server-build](../../docs/runbooks/feedback-deploy-server-build.md)
 - [feedback-pr-merge-order](../../docs/runbooks/feedback-pr-merge-order.md)
 - [20260317-nupai-crm-it-test-methodology](../../docs/knowledge/20260317-nupai-crm-it-test-methodology.md)
+- [crm-memory-feedback-api-serialization-completeness](../../docs/knowledge/crm-memory-feedback-api-serialization-completeness.md)
+- [crm-memory-feedback-codex-review-trigger](../../docs/knowledge/crm-memory-feedback-codex-review-trigger.md)
+- [crm-memory-feedback-deploy-server-build](../../docs/knowledge/crm-memory-feedback-deploy-server-build.md)
+- [crm-memory-feedback-fix-incomplete-multi-entry](../../docs/knowledge/crm-memory-feedback-fix-incomplete-multi-entry.md)
+- [crm-memory-feedback-frontend-ci-hidden-checks](../../docs/knowledge/crm-memory-feedback-frontend-ci-hidden-checks.md)
+- [crm-memory-feedback-gh-pr-comment-allowed](../../docs/knowledge/crm-memory-feedback-gh-pr-comment-allowed.md)
+- [crm-memory-feedback-git-branch-workflow](../../docs/knowledge/crm-memory-feedback-git-branch-workflow.md)
+- [crm-memory-feedback-health-check-false-positive](../../docs/knowledge/crm-memory-feedback-health-check-false-positive.md)
+- [crm-memory-feedback-hooks-stdin-json](../../docs/knowledge/crm-memory-feedback-hooks-stdin-json.md)
+- [crm-memory-feedback-linear-api](../../docs/knowledge/crm-memory-feedback-linear-api.md)
+- [crm-memory-feedback-mobile-pages-dead-code](../../docs/knowledge/crm-memory-feedback-mobile-pages-dead-code.md)
+- [crm-memory-feedback-openclaw-file-write-workaround](../../docs/knowledge/crm-memory-feedback-openclaw-file-write-workaround.md)
+- [crm-memory-feedback-openclaw-no-anthropic](../../docs/knowledge/crm-memory-feedback-openclaw-no-anthropic.md)
+- [crm-memory-feedback-playwright-textcontent-vs-innertext](../../docs/knowledge/crm-memory-feedback-playwright-textcontent-vs-innertext.md)
+- [crm-memory-feedback-pr-gate-rerun-attempt2](../../docs/knowledge/crm-memory-feedback-pr-gate-rerun-attempt2.md)
+- [crm-memory-feedback-pr-merge-order](../../docs/knowledge/crm-memory-feedback-pr-merge-order.md)
+- [crm-memory-feedback-pr-workflow](../../docs/knowledge/crm-memory-feedback-pr-workflow.md)
+- [crm-memory-feedback-pydantic-model-fields-set](../../docs/knowledge/crm-memory-feedback-pydantic-model-fields-set.md)
+- [crm-memory-feedback-reminder-two-json-formats](../../docs/knowledge/crm-memory-feedback-reminder-two-json-formats.md)
+- [crm-memory-feedback-role-permission-scope](../../docs/knowledge/crm-memory-feedback-role-permission-scope.md)
+- [crm-memory-feedback-two-types-of-garbled-text](../../docs/knowledge/crm-memory-feedback-two-types-of-garbled-text.md)
+- [crm-memory-feedback-wf1-memory-card-failure](../../docs/knowledge/crm-memory-feedback-wf1-memory-card-failure.md)
+- [crm-memory-memory](../../docs/knowledge/crm-memory-memory.md)
+- [crm-memory-project-memoryops-v11](../../docs/knowledge/crm-memory-project-memoryops-v11.md)
+- [crm-memory-reference-linear](../../docs/knowledge/crm-memory-reference-linear.md)
+- [crm-memory-reference-server-ips](../../docs/knowledge/crm-memory-reference-server-ips.md)
 - [feedback-playwright-textcontent-vs-innertext](../../docs/knowledge/feedback-playwright-textcontent-vs-innertext.md)
