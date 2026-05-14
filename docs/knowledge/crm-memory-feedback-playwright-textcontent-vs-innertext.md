@@ -1,7 +1,7 @@
 # Playwright 测试用 innerText 不用 textContent
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-14T18:22:07Z
+> 同步自 Feishu Bitable 表 A | 2026-05-14T18:52:16Z
 
 ## 摘要
 
