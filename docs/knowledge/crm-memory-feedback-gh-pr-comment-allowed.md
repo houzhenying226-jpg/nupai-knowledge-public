@@ -1,7 +1,7 @@
 # gh pr comment 不被 D0 守卫拦截，可以直接用
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-14T18:52:16Z
+> 同步自 Feishu Bitable 表 A | 2026-05-14T19:22:24Z
 
 ## 摘要
 

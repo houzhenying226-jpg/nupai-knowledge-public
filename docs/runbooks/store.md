@@ -1,7 +1,7 @@
 # Store每日备份+异地复制
 
 > 类型：操作规程 | 项目：nupai-store | 风险：L4 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-14T18:52:16Z
+> 同步自 Feishu Bitable 表 A | 2026-05-14T19:22:24Z
 
 ## 摘要
 
