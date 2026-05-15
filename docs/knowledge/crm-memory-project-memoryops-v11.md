@@ -1,7 +1,7 @@
 # MemoryOps v1.1 deployment complete
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-15T16:59:34Z
+> 同步自 Feishu Bitable 表 A | 2026-05-15T17:29:42Z
 
 ## 摘要
 
