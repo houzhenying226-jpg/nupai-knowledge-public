@@ -1,7 +1,7 @@
 # Pydantic model_fields_set 区分"未传"与"传 null"
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-15T19:00:09Z
+> 同步自 Feishu Bitable 表 A | 2026-05-15T19:30:18Z
 
 ## 摘要
 
