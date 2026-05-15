@@ -1,7 +1,7 @@
 # frontend/mobile-pages/ 是孤立死代码，不需要维护
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-15T12:58:09Z
+> 同步自 Feishu Bitable 表 A | 2026-05-15T13:28:18Z
 
 ## 摘要
 
