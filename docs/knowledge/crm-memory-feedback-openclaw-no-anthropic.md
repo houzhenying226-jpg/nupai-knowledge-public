@@ -1,7 +1,7 @@
 # OpenClaw 禁止使用 Claude/Anthropic
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-15T04:25:16Z
+> 同步自 Feishu Bitable 表 A | 2026-05-15T04:55:24Z
 
 ## 摘要
 
