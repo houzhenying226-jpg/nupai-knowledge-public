@@ -1,7 +1,7 @@
 # deploy.yml 健康检查假通过 Bug
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-15T20:00:27Z
+> 同步自 Feishu Bitable 表 A | 2026-05-15T20:30:36Z
 
 ## 摘要
 
