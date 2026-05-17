@@ -1,8 +1,8 @@
 # openclaw 知识索引
 
-> 自动生成 by C1 | 2026-05-13T04:00:20Z
+> 自动生成 by C1 | 2026-05-17T08:41:58Z
 
-共 70 条记录：
+共 72 条记录：
 
 - [20260427-openclaw-7-layer-arch](../../docs/decisions/20260427-openclaw-7-layer-arch.md)
 - [20260427-openclaw-claude-code-retirement](../../docs/decisions/20260427-openclaw-claude-code-retirement.md)
@@ -37,6 +37,7 @@
 - [channelsfeishuheartbeatvisibilityintervalms](../../docs/incidents/channelsfeishuheartbeatvisibilityintervalms.md)
 - [claudecodemcp](../../docs/incidents/claudecodemcp.md)
 - [doctortoolsallowagent](../../docs/incidents/doctortoolsallowagent.md)
+- [feishu-first-ok-second-silent-root-cause-20260517](../../docs/incidents/feishu-first-ok-second-silent-root-cause-20260517.md)
 - [feishu-heartbeat-schema-visibility-interval-only-20260505](../../docs/incidents/feishu-heartbeat-schema-visibility-interval-only-20260505.md)
 - [memoryops-v1-1](../../docs/incidents/memoryops-v1-1.md)
 - [openapiscopetenantuser](../../docs/incidents/openapiscopetenantuser.md)
@@ -73,4 +74,5 @@
 - [20260427-openclaw-role-transformation](../../docs/knowledge/20260427-openclaw-role-transformation.md)
 - [20260429-openclaw-before-dispatch-hook-guide](../../docs/knowledge/20260429-openclaw-before-dispatch-hook-guide.md)
 - [openclaw-feishu-direct-session-verification-20260505](../../docs/knowledge/openclaw-feishu-direct-session-verification-20260505.md)
+- [openclaw-message-routing-gateway-vs-webhook-20260517](../../docs/knowledge/openclaw-message-routing-gateway-vs-webhook-20260517.md)
 - [test-entry](../../docs/knowledge/test-entry.md)
