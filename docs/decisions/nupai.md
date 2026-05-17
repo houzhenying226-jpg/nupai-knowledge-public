@@ -1,7 +1,7 @@
 # NuPai命名规范铁律
 
 > 类型：架构决策 | 项目：_global | 风险：L3 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-17T01:39:48Z
+> 同步自 Feishu Bitable 表 A | 2026-05-17T02:09:56Z
 
 ## 摘要
 
