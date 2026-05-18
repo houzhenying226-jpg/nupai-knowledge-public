@@ -1,7 +1,7 @@
 # OpenClaw 三模型自动升级路由接入 NadirClaw
 
 > 类型：操作规程 | 项目：openclaw | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-18T08:19:15Z
+> 同步自 Feishu Bitable 表 A | 2026-05-18T08:49:25Z
 
 ## 摘要
 
