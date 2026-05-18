@@ -1,7 +1,7 @@
 # OpenClaw worker 自愈验收手册
 
 > 类型：操作规程 | 项目：openclaw | 风险：L1 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-05-17T23:46:37Z
+> 同步自 Feishu Bitable 表 A | 2026-05-18T00:16:45Z
 
 ## 摘要
 
