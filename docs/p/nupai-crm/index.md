@@ -1,13 +1,15 @@
 # nupai-crm 知识索引
 
-> 自动生成 by C1 | 2026-05-13T04:10:14Z
+> 自动生成 by C1 | 2026-05-22T09:00:09Z
 
-共 41 条记录：
+共 50 条记录：
 
 - [20260317-nupai-crm-api-no-e2e-test](../../docs/incidents/20260317-nupai-crm-api-no-e2e-test.md)
 - [20260317-nupai-crm-enum-no-translation](../../docs/incidents/20260317-nupai-crm-enum-no-translation.md)
 - [20260317-nupai-crm-it3-bug-root-causes](../../docs/incidents/20260317-nupai-crm-it3-bug-root-causes.md)
 - [20260317-nupai-crm-mobile-never-tested](../../docs/incidents/20260317-nupai-crm-mobile-never-tested.md)
+- [crm-launch-r1-postmortem-full](../../docs/incidents/crm-launch-r1-postmortem-full.md)
+- [crm-launch-r1-postmortem](../../docs/incidents/crm-launch-r1-postmortem.md)
 - [crmp0](../../docs/incidents/crmp0.md)
 - [20260317-nupai-crm-claude-code-task-order](../../docs/runbooks/20260317-nupai-crm-claude-code-task-order.md)
 - [crm-mysql](../../docs/runbooks/crm-mysql.md)
@@ -44,4 +46,11 @@
 - [crm-memory-project-memoryops-v11](../../docs/knowledge/crm-memory-project-memoryops-v11.md)
 - [crm-memory-reference-linear](../../docs/knowledge/crm-memory-reference-linear.md)
 - [crm-memory-reference-server-ips](../../docs/knowledge/crm-memory-reference-server-ips.md)
+- [feedback-frontend-page-size-and-skeleton](../../docs/knowledge/feedback-frontend-page-size-and-skeleton.md)
+- [feedback-nextjs-dynamic-import-heavy-components](../../docs/knowledge/feedback-nextjs-dynamic-import-heavy-components.md)
+- [feedback-playwright-localstorage-auth](../../docs/knowledge/feedback-playwright-localstorage-auth.md)
 - [feedback-playwright-textcontent-vs-innertext](../../docs/knowledge/feedback-playwright-textcontent-vs-innertext.md)
+- [feedback-production-config-defaults](../../docs/knowledge/feedback-production-config-defaults.md)
+- [feedback-python-list-vs-string-index](../../docs/knowledge/feedback-python-list-vs-string-index.md)
+- [feedback-sqlalchemy-model-missing-index](../../docs/knowledge/feedback-sqlalchemy-model-missing-index.md)
+- [feedback-sqlalchemy-n-plus-1](../../docs/knowledge/feedback-sqlalchemy-n-plus-1.md)
