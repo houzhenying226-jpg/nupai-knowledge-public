@@ -1,5 +1,5 @@
 # nupai-crm 项目状态
-更新时间：2026-05-23T14:00:00Z
+更新时间：2026-05-24T14:00:00Z
 
 ## Cron 任务台账
 （无 cron 任务）
@@ -12,4 +12,4 @@
 - knowledge/feedback-sqlalchemy-n-plus-1.md
 
 ## 知识库统计
-总条目：50 条
+总条目：51 条

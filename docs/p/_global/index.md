@@ -1,8 +1,8 @@
 # _global 知识索引
 
-> 自动生成 by C1 | 2026-05-02T11:06:39Z
+> 自动生成 by C1 | 2026-05-24T09:30:05Z
 
-共 20 条记录：
+共 21 条记录：
 
 - [claudemdimport](../../docs/decisions/claudemdimport.md)
 - [compose-f](../../docs/decisions/compose-f.md)
@@ -17,6 +17,7 @@
 - [nupaip0p1p2](../../docs/incidents/nupaip0p1p2.md)
 - [patlen](../../docs/incidents/patlen.md)
 - [rebuild](../../docs/incidents/rebuild.md)
+- [fesun-platform-project-bootstrap-standard](../../docs/runbooks/fesun-platform-project-bootstrap-standard.md)
 - [knowledge-1777719929](../../docs/runbooks/knowledge-1777719929.md)
 - [mac-mini](../../docs/runbooks/mac-mini.md)
 - [nupai](../../docs/runbooks/nupai.md)

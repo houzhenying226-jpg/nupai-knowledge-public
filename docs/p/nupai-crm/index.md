@@ -1,13 +1,14 @@
 # nupai-crm 知识索引
 
-> 自动生成 by C1 | 2026-05-22T09:00:09Z
+> 自动生成 by C1 | 2026-05-24T09:00:06Z
 
-共 50 条记录：
+共 51 条记录：
 
 - [20260317-nupai-crm-api-no-e2e-test](../../docs/incidents/20260317-nupai-crm-api-no-e2e-test.md)
 - [20260317-nupai-crm-enum-no-translation](../../docs/incidents/20260317-nupai-crm-enum-no-translation.md)
 - [20260317-nupai-crm-it3-bug-root-causes](../../docs/incidents/20260317-nupai-crm-it3-bug-root-causes.md)
 - [20260317-nupai-crm-mobile-never-tested](../../docs/incidents/20260317-nupai-crm-mobile-never-tested.md)
+- [bugfix-process-postmortem](../../docs/incidents/bugfix-process-postmortem.md)
 - [crm-launch-r1-postmortem-full](../../docs/incidents/crm-launch-r1-postmortem-full.md)
 - [crm-launch-r1-postmortem](../../docs/incidents/crm-launch-r1-postmortem.md)
 - [crmp0](../../docs/incidents/crmp0.md)
