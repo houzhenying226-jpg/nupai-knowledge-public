@@ -1,18 +1,18 @@
 # openclaw 项目状态
-更新时间：2026-05-27T14:00:00Z
+更新时间：2026-05-28T14:00:01Z
 
 ## Cron 任务台账
 | 任务名 | 状态 | 最近日志 |
 |--------|------|----------|
 | feishu-wiki-sync | 正常 | 2026-05-18T14:51:20Z 同步 68 文件 |
-| task-pulse | 正常 | 2026-05-27T13:55:00Z ok=9 issues=0 |
-| status-snapshot | 正常 | 2026-05-26T14:00:00Z STATUS.md 已更新 |
+| task-pulse | 正常 | 2026-05-28T13:55:00Z ok=8 issues=0 |
+| status-snapshot | 正常 | 2026-05-27T14:00:00Z STATUS.md 已更新 |
 | wiki-lint | 异常 | 2026-05-23T19:00:01Z gateway 失败: opencla |
-| openclaw-gateway | 正常 | 2026-05-27T13:55:02Z 存活 - 存活: launchctl: |
-| webhook-server | 正常 | 2026-05-27T13:55:03Z 存活 - 存活: launchctl: |
-| watchdog | 正常 | 2026-05-27T13:55:05Z 存活 - 存活: watchdog |
-| feishu-ws | 正常 | 2026-05-27T13:55:08Z 存活 - WS ready |
-| nl-hash-guard | 正常 | 2026-05-27T13:55:06Z 存活 - 上次跑 0min 前 (阈值 |
+| openclaw-gateway | 正常 | 2026-05-28T13:55:01Z 存活 - 存活: launchctl: |
+| webhook-server | 正常 | 2026-05-28T13:55:02Z 存活 - 存活: launchctl: |
+| watchdog | 正常 | 2026-05-28T13:55:04Z 存活 - 存活: watchdog |
+| feishu-ws | 异常 | 2026-05-28T13:55:07Z DEAD - WS NOT ready |
+| nl-hash-guard | 正常 | 2026-05-28T13:55:05Z 存活 - 上次跑 4min 前 (阈值 |
 
 ## 最近知识条目（最多5条）
 - knowledge/20260427-openclaw-role-transformation.md
