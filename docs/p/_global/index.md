@@ -1,8 +1,8 @@
 # _global 知识索引
 
-> 自动生成 by C1 | 2026-05-24T09:30:05Z
+> 自动生成 by C1 | 2026-06-06T14:00:05Z
 
-共 21 条记录：
+共 22 条记录：
 
 - [claudemdimport](../../docs/decisions/claudemdimport.md)
 - [compose-f](../../docs/decisions/compose-f.md)
@@ -23,5 +23,6 @@
 - [nupai](../../docs/runbooks/nupai.md)
 - [nupaissh](../../docs/runbooks/nupaissh.md)
 - [nupaiv10](../../docs/runbooks/nupaiv10.md)
+- [self-hosted-runners](../../docs/runbooks/self-hosted-runners.md)
 - [storecrm](../../docs/runbooks/storecrm.md)
 - [storecrmssl](../../docs/runbooks/storecrmssl.md)

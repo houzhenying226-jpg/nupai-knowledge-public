@@ -1,8 +1,8 @@
 # nupai-store 知识索引
 
-> 自动生成 by C1 | 2026-05-13T04:00:20Z
+> 自动生成 by C1 | 2026-06-06T14:00:05Z
 
-共 18 条记录：
+共 19 条记录：
 
 - [knowledge-1778643737](../../docs/decisions/knowledge-1778643737.md)
 - [srcfrontend-v2](../../docs/decisions/srcfrontend-v2.md)
@@ -15,6 +15,7 @@
 - [dockerssh](../../docs/runbooks/dockerssh.md)
 - [https-url](../../docs/runbooks/https-url.md)
 - [js](../../docs/runbooks/js.md)
+- [nupai-store-ops](../../docs/runbooks/nupai-store-ops.md)
 - [ssh](../../docs/runbooks/ssh.md)
 - [store-postgresql](../../docs/runbooks/store-postgresql.md)
 - [store](../../docs/runbooks/store.md)
