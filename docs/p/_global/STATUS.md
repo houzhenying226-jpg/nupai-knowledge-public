@@ -1,15 +1,15 @@
 # _global 项目状态
-更新时间：2026-06-06T14:00:00Z
+更新时间：2026-06-07T14:00:00Z
 
 ## Cron 任务台账
 （无 cron 任务）
 
 ## 最近知识条目（最多5条）
-- runbooks/nupai.md
 - runbooks/nupaissh.md
 - runbooks/nupaiv10.md
+- runbooks/self-hosted-runners.md
 - runbooks/storecrm.md
 - runbooks/storecrmssl.md
 
 ## 知识库统计
-总条目：21 条
+总条目：22 条
