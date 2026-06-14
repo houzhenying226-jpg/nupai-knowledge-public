@@ -511,3 +511,47 @@ outputs: 1
 - **新增《Bitable 表 A 数据字典与同步机制》**：详细定义作为“正文真源”的 Bitable 表结构、字段含义、大小限制处理策略（如 >80KB 拆分），以及 C1 同步脚本的逻辑说明。
 - **新增《NuPai 版本治理 v2.1 用户手册》**：汇总 VERSION、CHANGELOG、current_state 文件的维护流程、状态机定义及自动化脚本（release-note-gen.py）的使用说明。
 - **新增《Runbook 分类索引与导航》**：建立按系统组件（CRM/Store/OpenClaw/Dify）和类型（故障/部署/配置）分类的 Runbook 导航页，解决孤立文件难以检索的问题。
+
+
+## [2026-06-13] lint | 周度健康检查
+
+model.run via gateway
+provider: openrouter
+model: deepseek/deepseek-v4-pro
+outputs: 1
+⚠️ 发现明文凭据 5 处
+
+## 矛盾内容
+- `index.md` 描述 C1 为“每 30 分钟同步飞书 Wiki”，而 `log.md` 架构决策已明确废弃 Wiki 同步，改为“Bitable 表 A 是正文真源”，Wiki 仅作可选阅读层不参与同步，二者对数据同步的核心来源描述矛盾。
+- `log.md` “坑 4”安全规则要求公开仓不得出现 `APP_TOKEN` 与表 C `table_id`，但 `index.md` 仍明文列出 `APP_TOKEN`、多个 `table_id` 及访问 URL，直接违反安全红线。
+- `log.md` 宣称“MemoryOps v1.1 已落地”“版本治理 v2.1 全链路完结”，但 `STATUS.md` 显示核心同步任务 `feishu-wiki-sync` 异常、`task-pulse` 异常，且 `projects/*/STATUS.md` 仍为“系统初始化中”，落成声明与运行实况冲突。
+- `tasks/ledger.md` 将 `feishu-wiki-sync`、`task-pulse` 等标记为“批 4 启用”（暗示未正式启用），而 `STATUS.md` 显示 `task-pulse`、`status-snapshot` 等已在运行产出日志，台账启用状态与实际调度情况矛盾。
+- `runbooks/crm.md` 指出 ufw 允许列表包含 80/443/8080 等端口，但实际业务监听在 8090/8493，并明确“配置和现实有偏差”，而其他部署文档或标准化模板未给出正确的防火墙规则，造成运维依据不统一。
+
+## 孤立文件
+- `blueprints/nupai-versioning-v2.1.md` 仅在 `log.md` 事件记录中被提及，未在 `index.md` 目录结构或任何架构决策索引中出现，缺乏正式入口。
+- `runbooks/20260319-openclaw-jobs-json-delivery-fix.md` 针对特定版本 `jobs.json` 修复，未被 OpenClaw 主运维索引或版本治理文档引用，容易随配置迭代失效。
+- `projects/nupai-store/STATUS.md` 与 `projects/nupai-crm/STATUS.md` 内容长期停留在“初始化中”，且未被顶层 `STATUS.md` 聚合引用，形成信息孤岛。
+- `runbooks/20260427-openclaw-23-item-deploy-checklist.md` 作为一次性落地清单，未归档到部署记录或基础设施验收类目中，索引缺失。
+- `runbooks/20260503-dispatcher-launchd-plist-repair.md` 高度具体，但未与常规 dispatcher 运维文档或故障复盘索引关联，缺乏上下文联动。
+
+## 过期内容
+- `index.md` 更新时间仍为 2026-04-30，标注“批 1 Gate 通过”，未反映 2026-05-02 版本治理 v2.1 落地及后续架构变更。
+- `tasks/ledger.md` 更新于 2026-04-29，未同步 `STATUS.md` 中实际运行的任务状态（如 `task-pulse` 已运行、`feishu-wiki-sync` 异常），台账失去参考价值。
+- `projects/nupai-crm/STATUS.md` 和 `projects/nupai-store/STATUS.md` 均为 2026-04-29 初始化骨架，无后续更新。
+- `log.md` 中 `batch-2-plan` 章节保留大量“dry-run only”“待验证”等临时措辞，但相关功能已落地，计划文档未标记为已执行或已废弃。
+- 部分 runbook（如 `20260429-openclaw-claude-code-retirement.md`）指出 Claude Code 为临时工具，而其他 runbook 仍以 Claude Code 为主要操作入口，缺乏统一的当前推荐工具链说明。
+
+## 缺失实体
+- 缺少《MemoryOps 运行时状态与 Cron 启用矩阵》统一展示 C1-C4 的预期/实际状态、调度时间和异常处理入口，目前信息分散在过期的台账和 snapshot 中。
+- 缺少《知识库公开内容脱敏规则》正式文档，导致 `index.md` 等公开索引反复出现 APP_TOKEN、table_id 等敏感信息。
+- 缺少《Bitable 表 A 作为正文真源的架构说明》，定义字段结构、写入规范、大文档拆分策略等，当前仅散落于 `log.md`。
+- 缺少《NuPai 版本治理 v2.1 操作入口》汇集 VERSION、CHANGELOG、current_state、知识状态机与相关自动化脚本的使用说明。
+- 缺少《Runbook 分类索引与导航》，未按系统组件（CRM/Store/OpenClaw/Dify）和类型（故障/部署/配置）建立分类引用，孤立 runbook 难以检索。
+
+## 新增建议
+- 新增《MemoryOps 运行时状态看板》，整合 C1‑C4 的任务状态、最近成功时间及告警入口，替代分散的台账与 snapshot 描述。
+- 新增《知识库安全发布与脱敏指南》，明确定义 APP_TOKEN、table_id、IP、端口等信息的脱敏标准，并提供 `index.md` 等公开索引的合规模板。
+- 新增《Bitable 表 A 数据字典与同步机制》，详细说明正文真源的表结构、字段含义、超限拆分策略及 C1 同步逻辑。
+- 新增《NuPai 版本治理 v2.1 操作手册》，汇总 VERSION、CHANGELOG、current_state 维护流程、状态机定义及 `release-note-gen.py` 等脚本用法。
+- 新增《Runbook 索引与导航页》，按系统（CRM/Store/OpenClaw/Dify）和类型分类链接所有细分 SOP，解决孤立文件问题。
