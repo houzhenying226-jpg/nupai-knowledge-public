@@ -555,3 +555,47 @@ outputs: 1
 - 新增《Bitable 表 A 数据字典与同步机制》，详细说明正文真源的表结构、字段含义、超限拆分策略及 C1 同步逻辑。
 - 新增《NuPai 版本治理 v2.1 操作手册》，汇总 VERSION、CHANGELOG、current_state 维护流程、状态机定义及 `release-note-gen.py` 等脚本用法。
 - 新增《Runbook 索引与导航页》，按系统（CRM/Store/OpenClaw/Dify）和类型分类链接所有细分 SOP，解决孤立文件问题。
+
+
+## [2026-06-20] lint | 周度健康检查
+
+model.run via gateway
+provider: openai-codex
+model: gpt-5.5
+outputs: 1
+⚠️ 发现明文凭据 5 处
+
+## 矛盾内容
+- `index.md` 仍描述 C1 为“同步飞书 Wiki”，但 `log.md` 架构决策已改为“Bitable 表 A 是正文真源，Wiki 不参与同步”。
+- `index.md` 明文保留 Bitable 标识和访问链接；`log.md` 明确规定公开仓不能放此类标识，安全规范与现状冲突。
+- `STATUS.md` 显示 `feishu-wiki-sync`、`task-pulse` 等任务异常；`log.md` 又宣称 MemoryOps / 版本治理已全链路落地。
+- `tasks/ledger.md` 仍写 C1-C4 为“批 4 启用”，但 `STATUS.md` 已显示这些任务在运行并产生日志。
+- `projects/nupai-crm/STATUS.md`、`projects/nupai-store/STATUS.md` 仍为“初始化中”，但顶层 `STATUS.md` 已在报告生产服务状态。
+
+## 孤立文件
+- `blueprints/nupai-versioning-v2.1.md` 未进入 `index.md` 目录结构，主要只在日志中被提及。
+- `runbooks/20260319-openclaw-jobs-json-delivery-fix.md` 未被 OpenClaw 主运维索引或任务台账引用。
+- `runbooks/20260427-openclaw-23-item-deploy-checklist.md` 是一次性部署清单，但缺少归档入口。
+- `runbooks/20260503-dispatcher-launchd-plist-repair.md` 未与 dispatcher 常规运维文档建立关联。
+- 多个 CRM/Store/Dify 细分 runbook 未被统一 Runbook 索引引用，查找依赖文件名猜测。
+
+## 过期内容
+- `index.md` 更新时间仍停留在早期批次，未反映后续架构变更和版本治理完成。
+- `tasks/ledger.md` 仍是批 1 骨架状态，未同步当前任务健康状态。
+- `projects/*/STATUS.md` 仍是初始化骨架，明显未被 C3 接管更新。
+- `log.md` 中 `batch-2-plan` 仍保留大量“dry-run / 待验证 / 等 review”措辞，未归档为已执行或废弃。
+- 多个 runbook 记录日期较早，但状态仍为“草稿”，缺少复审或 CURRENT/DEPRECATED 标记。
+
+## 缺失实体
+- 缺少《Bitable 表 A 正文真源架构说明》，当前关键决策只埋在 `log.md`。
+- 缺少《MemoryOps C1-C4 运行状态矩阵》，无法统一解释 planned / enabled / error。
+- 缺少《公开仓脱敏规则》，导致敏感标识反复出现在索引文件。
+- 缺少《版本治理 v2.1 操作入口》，集中说明 VERSION、CHANGELOG、current_state、状态机和脚本。
+- 缺少《Runbook 分类索引》，按 CRM / Store / OpenClaw / Dify / 安全等维度聚合 SOP。
+
+## 新增建议
+- 新增《知识库安全发布与脱敏指南》，明确 Bitable 标识、访问链接、服务地址、密钥名和值的处理规则。
+- 新增《MemoryOps 当前状态看板》，展示 C1-C4 最近成功时间、异常原因和修复入口。
+- 新增《Bitable 表 A 数据字典与同步机制》，说明字段、大小限制、拆分策略和 GitHub 映射。
+- 新增《项目状态文件维护规范》，明确顶层与项目级 STATUS 的更新责任和频率。
+- 新增《OpenClaw/dispatcher 运维总索引》，把零散故障 SOP 串成可导航知识树。
