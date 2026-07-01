@@ -1,7 +1,7 @@
 # Linear API 必须用 curl
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-06-30T13:30:00Z
+> 同步自 Feishu Bitable 表 A | 2026-07-01T13:00:00Z
 
 ## 摘要
 
