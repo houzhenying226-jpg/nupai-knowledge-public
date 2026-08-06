@@ -1,7 +1,7 @@
 # Linear API 配置
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-08-05T14:00:02Z
+> 同步自 Feishu Bitable 表 A | 2026-08-06T14:00:00Z
 
 ## 摘要
 
