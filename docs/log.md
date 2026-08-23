@@ -965,3 +965,58 @@ outputs: 1
 - 新增《Bitable 表 A 数据字典与同步机制》，说明字段、大小限制、拆分策略和 GitHub 映射。
 - 新增《项目状态文件维护规范》，明确顶层与项目级 STATUS 的更新责任和频率。
 - 新增《OpenClaw / dispatcher 运维总索引》，把零散故障 SOP 串成可导航知识树。
+
+
+## [2026-08-22] lint | 周度健康检查
+
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - models.providers.minimax.apiKey: Missing env var "MINIMAX_API_KEY" -  │
+│    feature using this value will be unavailable                          │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+model.run via gateway
+provider: deepseek
+model: deepseek-v4-pro
+outputs: 1
+## 知识库质量分析报告
+
+> 检测到知识库中存在敏感标识信息（飞书 Bitable APP_TOKEN、table_id、访问 URL），已在历史 lint 记录中多次告警。以下报告不对具体值进行复述。
+
+---
+
+## 矛盾内容
+- `index.md` 仍描述 C1 为“每 30 分钟同步飞书 Wiki”，而 `log.md` 架构决策已明确废弃 Wiki 同步、改为“Bitable 表 A 是正文真源”，两者对核心数据同步来源的描述相互矛盾。
+- `log.md` “坑 4”明确规定公开仓不得放 `APP_TOKEN` 与表 C `table_id`（Codex 曾拦截），但 `index.md` 仍明文保留这些敏感标识及访问 URL，安全规范与实际内容直接冲突。
+- `log.md` 宣称“MemoryOps v1.1 已落地”“版本治理 v2.1 全链路完结”，但 `STATUS.md` 显示 `feishu-wiki-sync`、`task-pulse`、`feishu-ws`、`nl-hash-guard` 多个核心任务异常，完工声明与运行实况矛盾。
+- `tasks/ledger.md` 将 `feishu-wiki-sync`、`task-pulse`、`status-snapshot`、`wiki-lint` 标记为“批 4 启用”，而 `STATUS.md` 显示这些任务已在运行并产出日志，启用状态描述冲突。
+- 项目级 `projects/nupai-crm/STATUS.md` 和 `projects/nupai-store/STATUS.md` 均写“系统初始化中”，但顶层 `STATUS.md` 已报告生产服务健康状态和开放 PR，项目状态未同步。
+
+## 孤立文件
+- `blueprints/nupai-versioning-v2.1.md` 未进入 `index.md` 目录结构，仅在 `log.md` 事件记录中被提及，缺少正式入口。
+- `runbooks/20260319-openclaw-jobs-json-delivery-fix.md` 未被 OpenClaw 主索引、任务台账或故障复盘引用，可能随 jobs.json 结构迭代而失效。
+- `runbooks/20260427-openclaw-23-item-deploy-checklist.md` 为一次性部署清单，未归档到部署记录或基础设施验收类目，难以被后续检索。
+- `runbooks/20260503-dispatcher-launchd-plist-repair.md` 未与 dispatcher 常规运维文档建立链接，缺乏上下文关联。
+- `projects/nupai-crm/STATUS.md` 与 `projects/nupai-store/STATUS.md` 虽在 `index.md` 中被列出，但内容长期停留在初始化骨架，未被顶层 `STATUS.md` 聚合引用，形成信息孤岛。
+
+## 过期内容
+- `index.md` 更新时间停留在 2026-04-30，标注“批 1 Gate 通过”，未反映 2026-05-02 版本治理 v2.1 落地及后续 Bitable 正文真源架构变更。
+- `tasks/ledger.md` 更新于 2026-04-29，未同步当前任务健康状态（如 `task-pulse` 已运行、`feishu-wiki-sync` 异常），台账失去参考价值。
+- `projects/nupai-crm/STATUS.md` 与 `projects/nupai-store/STATUS.md` 均为 2026-04-29 初始化骨架，明显未被 C3 status-snapshot 接管更新。
+- `log.md` 中 `batch-2-plan` 章节仍保留大量“dry-run only / 待验证 / 等振英 review”的计划态措辞，但相关功能已确认落地，计划文档未标记为已执行或已废弃。
+- 多个 runbook 状态字段仍为“草稿”，但实际已被生产使用或已过期，缺少 CURRENT / DEPRECATED / HISTORICAL 状态复审。
+
+## 缺失实体
+- 缺少《Bitable 表 A 正文真源架构说明》：关键架构决策只埋在 `log.md` 中，没有正式文档定义表 A 字段结构、写入规范及与 GitHub 文件的映射。
+- 缺少《MemoryOps C1-C4 运行状态矩阵》：无统一文档展示各 cron 的 planned / dry-run / enabled / error 状态、调度时间及异常处理入口。
+- 缺少《公开仓脱敏规则》：虽在 `log.md` 多次提及，但无正式规范定义哪些标识可公开、哪些必须 `[REDACTED]`，导致敏感信息反复出现。
+- 缺少《版本治理 v2.1 操作入口》：`log.md` 声称 `docs/VERSION`、`docs/CHANGELOG.md`、`docs/current_state.md`、知识状态机已落地，但知识库中无对应索引或操作说明。
+- 缺少《Runbook 分类索引》：大量细分 SOP 分散在 `runbooks/` 目录，无按 CRM / Store / OpenClaw / Dify / 安全分类的导航页面。
+
+## 新增建议
+- 新增《知识库安全发布与脱敏指南》：明确定义飞书标识、访问链接、服务地址、端口、Key 名称和值的公开/脱敏规则，并提供 `index.md` 等公共索引文件的合规模板。
+- 新增《MemoryOps 当前状态看板》：整合 C1-C4 的预期状态、实际状态、最近成功时间和异常修复入口，替代分散的台账与快照描述。
+- 新增《Bitable 表 A 数据字典与同步机制》：说明正文真源的表结构、字段含义、80KB 拆分策略及 C1 同步逻辑。
+- 新增《项目状态文件维护规范》：明确顶层 `STATUS.md` 与项目级 `projects/*/STATUS.md` 的更新责任方和频率，解决项目状态长期滞留“初始化中”问题。
+- 新增《OpenClaw / dispatcher 运维总索引》：将零散故障 SOP（jobs.json、launchd plist、P2P DM allowlist、worker 战报等）按主题串联为可导航知识树。
