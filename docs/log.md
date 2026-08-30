@@ -1020,3 +1020,54 @@ outputs: 1
 - 新增《Bitable 表 A 数据字典与同步机制》：说明正文真源的表结构、字段含义、80KB 拆分策略及 C1 同步逻辑。
 - 新增《项目状态文件维护规范》：明确顶层 `STATUS.md` 与项目级 `projects/*/STATUS.md` 的更新责任方和频率，解决项目状态长期滞留“初始化中”问题。
 - 新增《OpenClaw / dispatcher 运维总索引》：将零散故障 SOP（jobs.json、launchd plist、P2P DM allowlist、worker 战报等）按主题串联为可导航知识树。
+
+
+## [2026-08-29] lint | 周度健康检查
+
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - models.providers.minimax.apiKey: Missing env var "MINIMAX_API_KEY" -  │
+│    feature using this value will be unavailable                          │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+model.run via gateway
+provider: openai-codex
+model: gpt-5.5
+outputs: 1
+⚠️ 发现明文凭据 12 处
+
+## 矛盾内容
+- `index.md` 仍称 C1 从飞书 Wiki 同步；`log.md` 架构决策已改为 Bitable 表 A 是正文真源，Wiki 不参与 C1 同步。
+- `index.md` 明文保留 Bitable 标识、凭据索引表标识和访问链接；`log.md` 明确记录公开仓不得放此类敏感标识。
+- `STATUS.md` 显示多个 MemoryOps 任务异常；`log.md` 又宣称 MemoryOps 与版本治理已全链路落地完成。
+- `tasks/ledger.md` 写 C1-C4 仍为后续批次启用；`STATUS.md` 显示其中多个任务已运行并产生日志。
+- 项目级 `projects/*/STATUS.md` 仍为“系统初始化中”，但顶层 `STATUS.md` 已报告生产服务状态。
+
+## 孤立文件
+- `blueprints/nupai-versioning-v2.1.md` 未进入 `index.md` 目录结构，仅在日志中被提及，缺少正式入口。
+- 多个 `runbooks/2026*.md` 未被 `index.md`、任务台账或统一 Runbook 索引引用，查找依赖文件名猜测。
+- `projects/nupai-crm/STATUS.md` 与 `projects/nupai-store/STATUS.md` 虽在目录列出，但未被顶层状态快照聚合引用。
+- `runbooks/20260427-openclaw-23-item-deploy-checklist.md` 属一次性部署清单，未归档到部署记录或验收索引。
+- `runbooks/20260503-dispatcher-launchd-plist-repair.md` 未与 dispatcher 常规运维文档建立上下文链接。
+
+## 过期内容
+- `index.md` 更新时间停留在早期批次，未反映 Bitable 正文真源和版本治理落地。
+- `tasks/ledger.md` 仍为批 1 骨架初始化状态，未同步当前任务异常/运行实况。
+- `projects/*/STATUS.md` 仍为初始化骨架，明显未被状态快照机制接管。
+- `log.md` 的 `batch-2-plan` 仍保留“dry-run / 待验证 / 等 review”等计划态措辞，未标记已完成或废弃。
+- `runbooks/20260503-openclaw-k11-task-heartbeat-reporting.md` 内容疑似截断，结尾不完整，影响可执行性。
+
+## 缺失实体
+- 缺少《Bitable 表 A 正文真源架构说明》，关键决策目前只埋在 `log.md`。
+- 缺少《MemoryOps C1-C4 运行状态矩阵》，无法统一解释 planned / enabled / error。
+- 缺少《公开仓脱敏规则》，导致敏感标识反复出现在索引文件。
+- 缺少《版本治理 v2.1 操作入口》，集中说明 VERSION、CHANGELOG、current_state、状态机和脚本。
+- 缺少《Runbook 分类索引》，按 CRM / Store / OpenClaw / Dify / 安全等维度聚合 SOP。
+
+## 新增建议
+- 新增《知识库安全发布与脱敏指南》，明确服务地址、Bitable 标识、访问链接、Key 名称和值的处理规则。
+- 新增《MemoryOps 当前状态看板》，展示 C1-C4 最近成功时间、异常原因和修复入口。
+- 新增《Bitable 表 A 数据字典与同步机制》，说明字段、大小限制、拆分策略和 GitHub 映射。
+- 新增《项目状态文件维护规范》，明确顶层与项目级 STATUS 的更新责任和频率。
+- 新增《OpenClaw / dispatcher 运维总索引》，把零散故障 SOP 串成可导航知识树。
