@@ -1,11 +1,13 @@
 # nupai-store 知识索引
 
-> 自动生成 by C1 | 2026-06-06T14:00:05Z
+> 自动生成 by C1 | 2026-09-03T11:30:16Z
 
-共 19 条记录：
+共 21 条记录：
 
 - [knowledge-1778643737](../../docs/decisions/knowledge-1778643737.md)
 - [srcfrontend-v2](../../docs/decisions/srcfrontend-v2.md)
+- [sto-580-order-ui-0815-p0](../../docs/decisions/sto-580-order-ui-0815-p0.md)
+- [store-round-inventory-three-buckets-2026-09-03](../../docs/decisions/store-round-inventory-three-buckets-2026-09-03.md)
 - [deploypatchnginx](../../docs/incidents/deploypatchnginx.md)
 - [docker127001127001loopback](../../docs/incidents/docker127001127001loopback.md)
 - [srcfrontend-v2-api](../../docs/incidents/srcfrontend-v2-api.md)
