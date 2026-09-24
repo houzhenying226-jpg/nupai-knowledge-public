@@ -1,17 +1,17 @@
 # NuPai 系统状态快照
-更新时间：2026-09-23T14:00:00Z（OpenClaw status-snapshot cron）
+更新时间：2026-09-24T14:00:01Z（OpenClaw status-snapshot cron）
 
 ## 生产服务状态
 ✅ CRM 39.106.83.79: HTTP 200
-❌ 门店 39.96.216.33: HTTP Error 404: Not Found
-❌ Dify 123.57.224.35: HTTP Error 404: Not Found
+✅ 门店 39.96.216.33: HTTP 200
+✅ Dify 123.57.224.35: HTTP 200
 
 ## 任务台账摘要（过去 24h）
 | 任务名 | 状态 | 最近日志 |
 |--------|------|----------|
-| feishu-wiki-sync | 异常 | ⚠️ feishu-wiki-sync: table A 读取失败: table |
+| feishu-wiki-sync | 正常 | 2026-09-24T13:30:01Z 同步 68 文件 |
 | task-pulse | 异常 | 2026-06-04T10:45:00Z ok=7 issues=1 | | I |
-| status-snapshot | 正常 | 2026-09-22T14:00:01Z STATUS.md 已更新 |
+| status-snapshot | 正常 | 2026-09-23T14:00:00Z STATUS.md 已更新 |
 | wiki-lint | 异常 | 2026-09-19T19:00:01Z gateway 失败: opencla |
 | openclaw-gateway | 正常 | 2026-06-04T10:45:02Z 存活 - 存活: launchctl: |
 | webhook-server | 正常 | 2026-06-04T10:45:03Z 存活 - 存活: launchctl: |
@@ -27,7 +27,7 @@
 
 ## 知识库条目数
 - 架构决策：40
-- 故障复盘：51
+- 故障复盘：54
 - 操作规程：50
 
 > 详细知识：读 docs/index.md 获取目录
