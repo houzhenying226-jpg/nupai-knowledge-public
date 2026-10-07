@@ -1,7 +1,7 @@
 # 三台服务器 IP 与职责
 
 > 类型：知识条目 | 项目：nupai-crm | 风险：L2 | 状态：草稿
-> 同步自 Feishu Bitable 表 A | 2026-10-07T17:30:29Z
+> 同步自 Feishu Bitable 表 A | 2026-10-07T18:00:16Z
 
 ## 摘要
 
