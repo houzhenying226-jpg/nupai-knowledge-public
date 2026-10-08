@@ -1,5 +1,5 @@
 # NuPai 系统状态快照
-更新时间：2026-10-07T14:00:15Z（OpenClaw status-snapshot cron）
+更新时间：2026-10-08T14:00:08Z（OpenClaw status-snapshot cron）
 
 ## 生产服务状态
 ✅ CRM 39.106.83.79: HTTP 200
@@ -9,7 +9,7 @@
 ## 任务台账摘要（过去 24h）
 | 任务名 | 状态 | 最近日志 |
 |--------|------|----------|
-| feishu-wiki-sync | 正常 | 2026-10-07T13:30:09Z 同步 68 文件 |
+| feishu-wiki-sync | 正常 | 2026-10-08T13:30:03Z 同步 68 文件 |
 | task-pulse | 异常 | 2026-06-04T10:45:00Z ok=7 issues=1 | | I |
 | status-snapshot | 正常 | 2026-10-06T14:00:02Z STATUS.md 已更新 |
 | wiki-lint | 异常 | 2026-10-03T19:00:01Z gateway 失败: opencla |
