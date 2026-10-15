@@ -1,12 +1,12 @@
 # openclaw 项目状态
-更新时间：2026-10-14T14:00:02Z
+更新时间：2026-10-15T14:00:02Z
 
 ## Cron 任务台账
 | 任务名 | 状态 | 最近日志 |
 |--------|------|----------|
-| feishu-wiki-sync | 正常 | 2026-10-14T13:30:02Z 同步 68 文件 |
+| feishu-wiki-sync | 正常 | 2026-10-15T13:30:00Z 同步 68 文件 |
 | task-pulse | 异常 | 2026-06-04T10:45:00Z ok=7 issues=1 | | I |
-| status-snapshot | 正常 | 2026-10-13T14:00:00Z STATUS.md 已更新 |
+| status-snapshot | 正常 | 2026-10-14T14:00:02Z STATUS.md 已更新 |
 | wiki-lint | 异常 | 2026-10-10T19:00:03Z gateway 失败: opencla |
 | openclaw-gateway | 正常 | 2026-06-04T10:45:02Z 存活 - 存活: launchctl: |
 | webhook-server | 正常 | 2026-06-04T10:45:03Z 存活 - 存活: launchctl: |
